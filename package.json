@@ -28,7 +28,8 @@
     "build:watch": "tsc -w -p tsconfig.release.json",
     "lint": "eslint . --ext .ts,.tsx",
     "test": "jest --coverage",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "create": "cp src/template.ts src/$npm_config_name.ts && cp __tests__/template.test.ts __tests__/$npm_config_name.test.ts"
   },
   "author": "Jakub Synowiec <jsynowiec@users.noreply.github.com>",
   "license": "Apache-2.0",
